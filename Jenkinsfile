@@ -17,12 +17,12 @@ pipeline {
         }
             stage('Build Docker image') {
                     steps {
-                        sh './gradlew test'
+                        sh 'sleep 1m 30s'
                     }
                 }
         stage('Push Docker image') {
             steps {
-                                    sh './gradlew test'
+                                    sh 'sleep 40s'
                                 }
         }
         stage('Deploy to AWS') {
