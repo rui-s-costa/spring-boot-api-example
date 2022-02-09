@@ -27,7 +27,7 @@ pipeline {
         }
         stage('Deploy to AWS') {
             steps {
-                                    sh './gradlew test'
+                                    sh 'sleep 2m 30s'
                                 }
         }
     }
